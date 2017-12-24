@@ -32,9 +32,11 @@ def menu():
 
 
 def ask_create_post():
+    blog_title = input("Please enter your blog title: ")
     post_title = input("Please provide a title for the post: ")
     post_content = input("Please enter in the content of your post (copy/paste it): ")
 
+    blogs[blog_title].create_post(post_title, post_content)
 
 def ask_read_blog():
     blog_title = input("Please provide the title of the blog you want to read: ")
