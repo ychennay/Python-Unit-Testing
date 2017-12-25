@@ -1,5 +1,4 @@
 from blog import Blog
-from post import Post
 
 MENU_PROMPT = "Enter 'c' to create a new blog, 'p' to create a new post, " \
               "'l' to list available blogs, 'r' to read a blog, 'q' to quit"
@@ -37,6 +36,7 @@ def ask_create_post():
     post_content = input("Please enter in the content of your post (copy/paste it): ")
 
     blogs[blog_title].create_post(post_title, post_content)
+
 
 def ask_read_blog():
     blog_title = input("Please provide the title of the blog you want to read: ")
