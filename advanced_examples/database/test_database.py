@@ -20,7 +20,8 @@ def test_frontend_db_gui():
 @mark.business_logic
 class AggregationLanguageTests:
 
-    def test_group_by(self):
+    def test_group_by(self, connection):
+        logging.info(f"Testing group by components with {connection.connection}")
         assert True
 
     @mark.database
